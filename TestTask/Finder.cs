@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace TestTask {
 	class Finder {
@@ -34,7 +35,7 @@ namespace TestTask {
 		}
 
 		public String[] GetListFiles() {
-			files = Directory.GetFiles(folder, templName);
+            files = Directory.GetFiles(folder, templName);
 			return files;
 		}
 
@@ -56,8 +57,9 @@ namespace TestTask {
 
 
 		private String[] GetListFiles(String inFolder) {
-			files = Directory.GetFiles(inFolder, templName);
-			return files;
+            Regex reg = new Regex(templName);
+            files = Directory.GetFiles(inFolder, "*").Where(path => reg.IsMatch(path)).ToArray<string>();
+            return files;
 		}
 
 		private String[] GetListFolders(String inFolder) {

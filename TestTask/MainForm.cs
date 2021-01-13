@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TestTask {
 	public partial class MainForm : Form {
@@ -46,5 +47,24 @@ namespace TestTask {
 				richTextBox2.Text = ShowerText.ShowBytes(finder.Folder + "\\" + listBox1.SelectedItem.ToString());
 			}
 		}
-	}
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e){
+            FileInfo saveOptions = new FileInfo("opt.conf");
+            StreamWriter wSaveOptions = saveOptions.CreateText();
+            wSaveOptions.WriteLine(textBoxFolder.Text);
+            wSaveOptions.WriteLine(textBoxFileName.Text);
+            wSaveOptions.Close();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            FileInfo saveOptions = new FileInfo("opt.conf");
+            if (saveOptions.Exists) {
+                StreamReader rSaveOptions = saveOptions.OpenText();
+                textBoxFolder.Text = rSaveOptions.ReadLine();
+                textBoxFileName.Text = rSaveOptions.ReadLine();
+                rSaveOptions.Close();
+            }
+        }
+    }
 }

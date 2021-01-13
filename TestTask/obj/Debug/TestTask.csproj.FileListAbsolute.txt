@@ -8,3 +8,13 @@ C:\Users\Odin\source\repos\TestTask\TestTask\obj\Debug\TestTask.csproj.GenerateR
 C:\Users\Odin\source\repos\TestTask\TestTask\obj\Debug\TestTask.csproj.CoreCompileInputs.cache
 C:\Users\Odin\source\repos\TestTask\TestTask\obj\Debug\TestTask.exe
 C:\Users\Odin\source\repos\TestTask\TestTask\obj\Debug\TestTask.pdb
+C:\Users\Odin\source\repos\openfinder\TestTask\bin\Debug\TestTask.exe.config
+C:\Users\Odin\source\repos\openfinder\TestTask\bin\Debug\TestTask.exe
+C:\Users\Odin\source\repos\openfinder\TestTask\bin\Debug\TestTask.pdb
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.csprojAssemblyReference.cache
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.MainForm.resources
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.Properties.Resources.resources
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.csproj.GenerateResource.cache
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.csproj.CoreCompileInputs.cache
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.exe
+C:\Users\Odin\source\repos\openfinder\TestTask\obj\Debug\TestTask.pdb
